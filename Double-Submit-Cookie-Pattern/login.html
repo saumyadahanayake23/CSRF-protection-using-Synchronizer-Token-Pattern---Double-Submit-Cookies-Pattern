@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <script type="text/javascript" src="./validateUser.js"></script>
+    <title>Login</title>
+  </head>
+
+  <body style="background-color:#B8D1D5;">
+  <div class="wrapper">
+    <form name="loginForm" action="generateCsrfToken.php" onsubmit="return validateUser();" method="post">
+      <input type="text" required="required" class="input-group mb-3" name="username" placeholder="User Name">
+      <br>
+      <input type="password" required="required" name="password" placeholder="Password">
+      <br>
+      <input type="submit"  class="btn btn-submit"value="Login">
+    </form>
+  </div>
+  </body>
+</html>
